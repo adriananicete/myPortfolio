@@ -1232,3 +1232,220 @@ hr {
   background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 } */
 
+.about-container{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  color: white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-section{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-img{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  border-radius: 10px;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-img-frame{
+  flex: 2;
+  width: 90%;
+}
+
+.about-img-frame img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.img-content{
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.about-name{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.about-email{
+  color: #a5a5a5;
+}
+
+.btn-about-box{
+  width: 100%;
+  height: 65px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-about-box button{
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-about-box button:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.about-me{
+  flex: 1.2;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-me-box-1{
+  flex: 1;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #101010;
+  border-radius: 10px;
+}
+
+.about-title{
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+.open-to-work{
+  color: #43B581;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 75px;
+}
+
+.about-text{
+  font-size: 16px;
+}
+
+.about-me-box-2{
+  flex: 1;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #101010;
+  border-radius: 10px;
+  line-height: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.educ-title{
+  font-size: 30px;
+  font-weight: 1000;
+  margin-top: 15px;
+}
+
+.educ-tag{
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: #a5a5a5;
+}
+
+.educ-box{
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.educ-logo{
+  height: 100%;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+.educ-content{
+  padding: 10px;
+}
+
+.bs{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sti{
+  font-size: 17px;
+}
+
+.school-yr{
+  font-size: 15px;
+  color: #a5a5a5;
+}
+
+.uplift-container{
+  background-color: #fff;
+  padding: 5px 0;
+}
+
+.techstack{
+  flex: 1.2;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.project-box{
+  width: 100%;
+  height: 350px;
+  border: 1px solid white;
+}
