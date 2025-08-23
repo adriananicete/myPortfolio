@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     />
+
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="main-container">
@@ -49,10 +51,10 @@
           </div>
 
           <div class="nav-links">
-            <a href=""
+            <a id="home" href=""
               ><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Home</a
             >
-            <a href=""
+            <a id="about" href=""
               ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a
             >
             <a href=""
@@ -519,37 +521,35 @@
               </div>
 
               <div class="social-container">
-                <div class="social-box">
-                  <div class="get-in-touch">
+                <div class="about-social-box">
+                  <div class="about-get-in-touch">
                     <!-- <i class="fa-regular fa-envelope"></i> -->
                     <p>Get in touch</p>
                   </div>
-                  <div class="social-1">
-                    <div class="social-title-container">
-                      <p class="social-title">
+                  <div class="about-social-1">
+                    <div class="about-social-title-container">
+                      <p class="about-social-title">
                         LIN <br />
                         KS:
                       </p>
                     </div>
-                    <div class="social-links">
-                      <i class="social-icon fa-brands fa-x-twitter"></i>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-x-twitter"></i>
                     </div>
-                    <div class="social-links">
-                      <i class="social-icon fa-brands fa-instagram"></i>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-github"></i>
                     </div>
                   </div>
 
-                  <div class="social-1">
-                    <div class="social-links">
-                      <i class="social-icon fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <div class="social-links">
-                      <i class="social-icon fa-brands fa-facebook-f"></i>
-                    </div>
-                    <div class="social-links">
-                      <i class="social-icon fa-brands fa-github"></i>
-                    </div>
-                  </div>
                   <!-- <p>Let's build something great together. Feel free to connect with me through any of the platforms above.</p> -->
                 </div>
               </div>
@@ -759,18 +759,12 @@
                     <p class="school-yr">2013 - 2017</p>
                   </div>
                 </div>
-
-                
               </div>
             </div>
 
             <div class="about-techstack">
-              <p class="tech-title-brand">Technical Skills</p>
-
               <div class="tech-box">
-                <div class="about-tech-title">
-                  <p class="dev-title">Frontend Development</p>
-                </div>
+              <p class="tech-title-brand">Technical Skills</p>
                 <div class="about-tech-logos">
                   <div class="about-logo-frame">
                     <img
@@ -808,14 +802,7 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="tech-box">
-                <div class="about-tech-title">
-                  <p class="dev-title">Backend Development</p>
-                </div>
-                <div class="about-tech-logos">
                   <div class="about-logo-frame">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
@@ -851,14 +838,7 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="tech-box">
-                <div class="about-tech-title">
-                  <p class="dev-title">Version Control</p>
-                </div>
-                <div class="about-tech-logos">
                   <div class="about-logo-frame">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
@@ -876,14 +856,7 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="tech-box">
-                <div class="about-tech-title">
-                  <p class="dev-title">Development Tools</p>
-                </div>
-                <div class="about-tech-logos">
                   <div class="about-logo-frame">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg"
@@ -898,32 +871,46 @@
 
                   <div class="about-logo-frame">
                     <img
-                      src="https://openingsource.org/wp-content/uploads/2018/02/json_logo.png"
+                      src="https://media.licdn.com/dms/image/C5112AQF49DOfOhCFSA/article-cover_image-shrink_720_1280/0/1579816811751?e=2147483647&v=beta&t=e47GGJDzoqsm4dl3qV2EjVWrxyMzIwsPmEE9Gywo83w"
                     />
                   </div>
                 </div>
               </div>
 
-              <div class="tech-box">
-                <div class="about-tech-title">
-                  <p class="dev-title">Design Tools</p>
-                </div>
-                <div class="about-tech-logos">
-                  <div class="about-logo-frame">
-                    <img
-                      src="https://logos-world.net/wp-content/uploads/2020/02/Canva-Logo.png"
-                    />
+              <div class="about-social-container">
+                <div class="about-social-box">
+                  <div class="about-get-in-touch">
+                    <!-- <i class="fa-regular fa-envelope"></i> -->
+                    <p>Get in touch</p>
+                  </div>
+                  <div class="about-social-1">
+                    <div class="about-social-title-container">
+                      <p class="about-social-title">
+                        LIN <br />
+                        KS:
+                      </p>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="about-social-links">
+                      <i class="about-social-icon fa-brands fa-github"></i>
+                    </div>
                   </div>
 
-                  <div class="about-logo-frame">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/11/Adobe-Photoshop-Logo-2013-2015.png"></img>
-                  </div>
-
-                  <div class="about-logo-frame">
-                    <img src="https://www.pngall.com/wp-content/uploads/13/Capcut-Logo-PNG.png"></img>
-                  </div>
+                  <!-- <p>Let's build something great together. Feel free to connect with me through any of the platforms above.</p> -->
                 </div>
               </div>
+            
             </div>
           </div>
 
