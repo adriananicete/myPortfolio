@@ -291,7 +291,7 @@ nav {
 .name {
   color: #d4cdd9;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .loader {
@@ -358,8 +358,10 @@ nav {
 }
 
 .box-1-content {
-  color: #e5e5e5;
-  place-content: center end;
+  text-align: justify;
+  width: 530px;
+  font-size: 15px;
+  color: #a5a5a5;
 }
 
 .middle-box {
@@ -431,10 +433,11 @@ nav {
 }
 
 .skill-content {
+  
   display: flex;
   flex-direction: column;
   color: #cccccc;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn-container {
@@ -447,6 +450,7 @@ nav {
 }
 
 .main-btn {
+  margin-top: 10px;
   padding: 15px 40px;
   border: none;
   outline: none;
@@ -546,32 +550,41 @@ hr {
 }
 
 .date {
-  flex: 1;
+  width: 100%;
+  max-height: 100px;
   display: flex;
   flex-wrap: wrap;
-  line-height: 43px;
-  border-bottom: 1px solid white;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
   padding: 10px;
+  font-size: 35px;
+  padding-bottom: 0;
+  line-height: 35px;
+}
+
+hr{
+  margin-top: 5px;
+  width: 88%;
 }
 
 .month {
-  flex: 1;
-  color: white;
-  font-size: 50px;
+  
+  
   font-weight: bolder;
-  margin-right: 10px;
+  margin-right: 8px;
+  
 }
 
 .day {
-  flex: 1;
-  color: white;
-  font-size: 45px;
+  
+  
   font-weight: bolder;
+  margin-right: 5px;
 }
 
 .year {
-  color: white;
-  font-size: 50px;
+  
   font-weight: bolder;
   letter-spacing: 10px;
 }
@@ -584,14 +597,9 @@ hr {
   font-size: 12px;
 }
 
-.date,
-.time {
-  flex: 1;
-}
-
 .time {
   width: 100%;
-  flex: 2;
+  flex: 1;
   padding-left: 5px;
   color: #a5a5a5;
 
@@ -609,7 +617,7 @@ hr {
 .divider,
 .sec {
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bolder;
 }
 
@@ -938,14 +946,14 @@ hr {
 
 /*-----------------CHILD 3-------------------------------*/
 .social-container {
-  flex: 1;
+  width: 100%;
+  height: auto;
   opacity: 0.8;
-  background-color: #101010;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 10px;
   transition: 0.2s;
   border-bottom-left-radius: 10px;
@@ -957,45 +965,51 @@ hr {
 }
 
 .social-box {
-  width: 80%;
+  background-color: #101010;
+  border-radius: 10px;
+  width: 75%;
   height: 100%;
-  padding: 10px 0px 10px 10px;
 
   display: flex;
+  justify-content: center;
+  align-items: end;
   flex-direction: column;
   gap: 10px;
 
   color: white;
 }
 
-.get-in-touch {
+.get-in-touch{
+  padding: 0 8px;
+  width: 90%;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 5px;
 }
 
 .social-1 {
   flex: 1;
+  width: 100%;
 
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .social-title {
-  text-align: end;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 1000;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 .social-title-container {
-  flex: 1;
   color: white;
 }
 
 .social-links {
-  flex: 1;
+  width: 72px;
+  height: 72px;
   background-color: #fff;
   color: white;
   border-radius: 15px;
@@ -1170,7 +1184,7 @@ hr {
   height: 100%;
   padding: 15px;
   /* border: 1px solid hsla(0, 0%, 50%, 0.3); */
-  background-color: #101010;
+  background-color: #000;
   border-radius: 10px;
 
   display: flex;
@@ -1227,6 +1241,21 @@ hr {
   border-color: rgba(255, 255, 255, 0.5);
   transform: translateY(-2px);
 }
+
+.gradient-container {
+  background: linear-gradient(135deg, #000 0%, #212121 50%, #000 100%);
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
 
 /* Different gradient examples na pwede mo subukan */
 /* .gradient-1 {
@@ -1536,11 +1565,11 @@ hr {
   width: 80%;
   height: 100%;
   padding: 10px 0px 10px 10px;
-
+  background-color: #101010;
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+  border-radius: 10px;
   color: white;
 }
 
@@ -1553,17 +1582,18 @@ hr {
 
 .about-social-1 {
   flex: 1;
+  width: 100%;
 
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 
 .about-social-title {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 1000;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 .about-social-title-container {
@@ -1571,8 +1601,8 @@ hr {
 }
 
 .about-social-links {
-  width: 95px;
-  height: 95px;
+  width: 72px;
+  height: 72px;
   background-color: #fff;
   color: white;
   border-radius: 15px;
@@ -1766,3 +1796,197 @@ hr {
   border-bottom: 1px solid white;
   font-size: 14px;
 }
+
+
+/*-------------------------------------------------MEDIA-----*/
+@media (max-width: 1366px)
+{
+  .main-container{
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 45%;
+    height: auto
+  }
+
+  .rightside-layout{
+    width: 90%;
+    height: auto;
+    border: none;
+  }
+
+  .hero-container{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .about{
+    flex: 2;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .profile-container, .footer-container{
+    display: none;
+  }
+
+  .nav-links{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .dashboard{
+    
+  }
+
+  .services-container, .AI-assistant-container, .gradient-container,.tech-container, .about-social-box, .profile-description, .services-card, .sub-box-1{
+    padding: 0px;
+  }
+
+  .profile-description-box{
+    width: 300px;
+    height: auto;
+  }
+
+  .social-media-box{
+    width: 300px;
+    height: auto;
+  }
+
+  .profile-box{
+    width: 400px;
+    height: auto;
+  }
+
+  .about-img-box{
+    width: 100%;
+  }
+
+  .tech-container{
+    padding: 20px;
+  }
+
+  .profile-description{
+    padding: 20px;
+  }
+
+  .sub-box-2{
+    padding: 10px;
+    flex: 1;
+  }
+
+  .sub-box-1{
+    padding: 10px 20px;
+    flex: 2;
+    width: 100%;
+    border: none;
+  }
+
+  .sub-box-1 .skill-title{
+    font-size: 20px;
+  }
+
+  .skill-container p{
+    font-size: 15px;
+  }
+
+  .career-cards-container{
+    padding: 20px 10px;
+  }
+
+  .about-more-container{
+    width: 100%;
+    height: 300px;
+    padding: 0 30px;
+  }
+
+
+  .social-container{
+    width: 100%;
+    height: auto;
+  }
+
+  .about-social-box{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .about-social-links{
+    width: 75px;
+    height: 75px;
+  }
+
+  .about-social-1{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .contribution{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #101010;
+  }
+
+  .services-container{
+    height: 210px;
+    width: 500px;
+  }
+
+  .services-title{
+    width: 230px;
+  }
+
+  .services-offer{
+    width: 200px;
+  }
+
+  .services-title p{
+    width: 200px;
+  }
+
+  .project-paragraph{
+    width: 200px;
+  }
+
+  .services-card{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .AI-assistant-container{
+    width: 200px;
+  }
+
+  .gradient-container{
+    width: auto;
+    height: 100%;
+    padding: 10px 20px;
+  }
+
+  .about-btn-container{
+    right: 20px;
+  }
+
+  .getINTouch-text{
+    width: 300px;
+  }
+} 

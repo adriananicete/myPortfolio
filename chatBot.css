@@ -1,16 +1,4 @@
-.gradient-container {
-  background: linear-gradient(135deg, #000 0%, #212121 50%, #000 100%);
 
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
 
 
 /* Chat Widget Styles */
