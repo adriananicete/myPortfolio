@@ -1,8 +1,10 @@
 const heroContainer = document.querySelector('.hero-container'); 
 const aboutContainer = document.querySelector('.about-container'); 
+const projectContainer = document.querySelector('.projects-container'); 
 const homeBtn = document.querySelector('#home'); 
 const aboutBtn = document.querySelector('#about'); 
 const aboutBtn2 = document.querySelector('.about-btn');
+const projectBtn = document.querySelector('#project');
 const month = document.querySelector('.month');
 const day = document.querySelector('.day');
 const year = document.querySelector('.year');
@@ -49,19 +51,53 @@ setInterval(updateDateTime, 1000);
 function goToHome(event) {
   event.preventDefault(); 
   event.stopPropagation(); 
-  heroContainer.style.display = 'flex';
+
   aboutContainer.style.display = 'none';
+  projectContainer.style.display = 'none';
+  heroContainer.style.display = 'flex';
+  
 }
 
 function goToAbout(event) {
   event.preventDefault(); 
   event.stopPropagation(); 
   
-  
-  aboutContainer.style.display = 'flex';
   heroContainer.style.display = 'none';
+  projectContainer.style.display = 'none';
+  aboutContainer.style.display = 'flex';
+  
+}
+
+function goToProject(event) {
+  event.preventDefault(); 
+  event.stopPropagation(); 
+  
+  aboutContainer.style.display = 'none';
+  heroContainer.style.display = 'none';
+  projectContainer.style.display = 'flex';
+  
 }
 
 homeBtn.addEventListener('click', goToHome);
 aboutBtn.addEventListener('click', goToAbout);
 aboutBtn2.addEventListener('click', goToAbout);
+projectBtn.addEventListener('click', goToProject);
+
+
+// document.addEventListener("keydown", function(e) {
+//     // Disable F12
+//     if (e.key === "F12") {
+//       e.preventDefault();
+//     }
+
+//     // Disable Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+U
+//     if ((e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || 
+//         (e.ctrlKey && e.key === "U")) {
+//       e.preventDefault();
+//     }
+//   });
+
+//   // Detect right click
+//   document.addEventListener("contextmenu", function(e) {
+//     e.preventDefault();
+//   });
