@@ -51,6 +51,7 @@ const responses = {
     'Yes, I’m familiar with React for frontend development, Node.js with Express for backend development, and I’m continuously learning other modern frameworks and tools to expand my skills 😊.',
     salary:
     'My asking salary is ranging at 30,000 to 35,000 pesos only 😊.'
+
 };
 
 // Get DOM elements
