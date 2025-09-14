@@ -1,10 +1,13 @@
 const heroContainer = document.querySelector(".hero-container");
 const aboutContainer = document.querySelector(".about-container");
 const projectContainer = document.querySelector(".projects-container");
+const skillContainer = document.querySelector(".skills-container");
 const homeBtn = document.querySelector("#home");
 const aboutBtn = document.querySelector("#about");
 const aboutBtn2 = document.querySelector(".about-btn");
 const projectBtn = document.querySelector("#project");
+const skillsBtn = document.querySelector("#skills");
+
 const month = document.querySelector(".month");
 const day = document.querySelector(".day");
 const year = document.querySelector(".year");
@@ -61,6 +64,7 @@ function goToHome(event) {
   event.preventDefault();
   event.stopPropagation();
 
+  skillContainer.style.display = "none";
   aboutContainer.style.display = "none";
   projectContainer.style.display = "none";
   heroContainer.style.display = "flex";
@@ -70,6 +74,7 @@ function goToAbout(event) {
   event.preventDefault();
   event.stopPropagation();
 
+  skillContainer.style.display = "none";
   heroContainer.style.display = "none";
   projectContainer.style.display = "none";
   aboutContainer.style.display = "flex";
@@ -79,15 +84,27 @@ function goToProject(event) {
   event.preventDefault();
   event.stopPropagation();
 
+  skillContainer.style.display = "none";
   aboutContainer.style.display = "none";
   heroContainer.style.display = "none";
   projectContainer.style.display = "flex";
+}
+
+function goToSkill(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  skillContainer.style.display = "flex";
+  aboutContainer.style.display = "none";
+  heroContainer.style.display = "none";
+  projectContainer.style.display = "none";
 }
 
 homeBtn.addEventListener("click", goToHome);
 aboutBtn.addEventListener("click", goToAbout);
 aboutBtn2.addEventListener("click", goToAbout);
 projectBtn.addEventListener("click", goToProject);
+skillsBtn.addEventListener("click", goToSkill);
 
 // document.addEventListener("keydown", function(e) {
 //     // Disable F12
